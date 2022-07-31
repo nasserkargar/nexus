@@ -1,0 +1,4 @@
+vi /etc/docker/daemon.json
+{ "insecure-registries":["192.168.5.217:8123"] }
+
+docker login -u admin -p admin123 192.168.5.217:8123

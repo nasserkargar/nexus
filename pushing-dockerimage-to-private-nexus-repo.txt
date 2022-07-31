@@ -1,0 +1,13 @@
+Tag the image.
+docker tag tomcat:latest 192.168.1.72:8123/ivans_tomcat:latest
+
+Push the image to our private registry.
+docker push 192.168.1.72:8123/ivans_tomcat:latest
+
+
+
+To pull the image, perhaps on another computer, use the following commands.
+
+docker login -u admin -p admin123 192.168.1.72:8123
+docker pull 192.168.1.72:8123/ivans_tomcat:latest
+	
